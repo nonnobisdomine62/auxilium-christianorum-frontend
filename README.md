@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Auxilium Christianorum Frontend
+
+A modern web application designed to assist members of the Auxilium Christianorum in their daily prayers. This application provides an easy-to-use interface for accessing and following the daily prayers of the association.
+
+## Features
+
+This project serves as a digital prayer companion for members of the Auxilium Christianorum. It features:
+
+- 📱 Mobile-friendly responsive design
+- 🌓 Dark/Light mode support
+- ⚡ Fast performance with Next.js
+- 🎨 Modern UI with Tailwind CSS
+
+## Important Disclaimer
+
+This is not an official website of the Auxilium Christianorum. This website is a personal project created to facilitate the daily prayers of the association. For official information, please visit [auxiliumchristianorum.org](https://auxiliumchristianorum.org).
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/nonnobisdomine62/auxilium-christianorum-frontend.git
+cd auxilium-christianorum-frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
+## Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/) - React framework
+- [React](https://reactjs.org/) - UI library
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [next-themes](https://github.com/pacocoursey/next-themes) - Dark mode support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Acknowledgments
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- The Auxilium Christianorum association for their spiritual guidance
+- The Next.js team for their excellent framework
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
