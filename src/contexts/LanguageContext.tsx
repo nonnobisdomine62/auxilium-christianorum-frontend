@@ -3,7 +3,7 @@
 import { createContext, ReactNode, useState } from 'react';
 import { Language } from '@/translations/ui';
 
-interface LanguageContextType {
+export interface LanguageContextType {
   language: Language;
   setLanguage: (language: Language) => void;
 }
