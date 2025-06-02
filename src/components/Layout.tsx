@@ -1,6 +1,10 @@
+'use client';
+
 import { ReactNode, useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
+import { useLanguage } from '@/hooks/useLanguage';
+import { uiTranslations } from '@/translations/ui';
 
 interface LayoutProps {
   children: ReactNode;
@@ -9,6 +13,7 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+  const { language } = useLanguage();
 
   useEffect(() => {
     setMounted(true);
@@ -18,13 +23,15 @@ export default function Layout({ children }: LayoutProps) {
     return null;
   }
 
+  const t = uiTranslations[language];
+
   return (
-    <div className={`min-h-screen ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+    <div className={`min-h-screen font-serif ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
       <header className="border-b border-gray-200 dark:border-gray-700">
-        <nav className="container mx-auto px-4 py-6">
+        <nav className="container mx-auto px-4 py-5">
           <div className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-serif">
-              Auxilium Christianorum Prayers
+            <Link href="/" className="text-2xl italic tracking-wide">
+              {t.siteTitle}
             </Link>
             <div className="flex items-center gap-4">
               <a
@@ -52,18 +59,18 @@ export default function Layout({ children }: LayoutProps) {
 
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-900 p-4 rounded-lg mb-8 text-sm text-red-900 dark:text-red-100">
-            <p className="font-medium">Disclaimer:</p>
-            <p>This is not an official website of the Auxilium Christianorum. This website is a personal project created to facilitate the daily prayers of the association. For official information, please visit <a href="https://auxiliumchristianorum.org" className="underline hover:text-red-700 dark:hover:text-red-300" target="_blank" rel="noopener noreferrer">auxiliumchristianorum.org</a>.</p>
+          <div className="bg-red-50/90 dark:bg-red-950/90 border border-red-200 dark:border-red-900 p-3.5 rounded-lg mb-7 text-red-900 dark:text-red-100">
+            <p className="font-medium text-base tracking-wide">{t.disclaimer}:</p>
+            <p className="text-base leading-relaxed mt-1">{t.disclaimerText} <a href="https://auxiliumchristianorum.org" className="underline hover:text-red-700 dark:hover:text-red-300 transition-colors" target="_blank" rel="noopener noreferrer">auxiliumchristianorum.org</a>.</p>
           </div>
           {children}
         </div>
       </main>
 
-      <footer className="border-t border-gray-200 dark:border-gray-700 mt-12">
-        <div className="container mx-auto px-4 py-6 text-center text-sm">
-          <p>Created with devotion for the members of Auxilium Christianorum</p>
-          <p className="mt-2">Not affiliated with the official Auxilium Christianorum</p>
+      <footer className="border-t border-gray-200 dark:border-gray-700 mt-10">
+        <div className="container mx-auto px-4 py-5 text-center text-base">
+          <p className="leading-relaxed">{t.createdWithDevotion}</p>
+          <p className="mt-1.5 leading-relaxed">{t.notAffiliated}</p>
         </div>
       </footer>
     </div>

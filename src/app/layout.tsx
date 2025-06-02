@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Crimson_Text } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from 'next-themes';
+import { LanguageProvider } from '@/contexts/LanguageContext';
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const crimsonText = Crimson_Text({ 
@@ -33,7 +34,9 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${crimsonText.variable} font-sans antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          {children}
+          <LanguageProvider>
+            {children}
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

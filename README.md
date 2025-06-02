@@ -8,8 +8,8 @@ This project serves as a digital prayer companion for members of the Auxilium Ch
 
 - 📱 Mobile-friendly responsive design
 - 🌓 Dark/Light mode support
-- ⚡ Fast performance with Next.js
-- 🎨 Modern UI with Tailwind CSS
+- 📅 Automatic detection of current day's prayers
+- 🌍 Available in 7 languages (English, Latin, Spanish, French, Italian, Polish, Portuguese)
 
 ## Important Disclaimer
 

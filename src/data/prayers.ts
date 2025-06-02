@@ -3,7 +3,7 @@ interface Prayer {
   content: string[];
 }
 
-interface DailyPrayers {
+export interface DailyPrayers {
   everyday: Prayer[];
   sunday: Prayer[];
   monday: Prayer[];
