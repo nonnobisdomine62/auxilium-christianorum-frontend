@@ -3,6 +3,13 @@ export type Language = keyof typeof uiTranslations;
 export const languageNames = {
   english: 'English',
   french: 'Français',
+  german: 'Deutsch',
+  czech: 'Čeština',
+  dutch: 'Nederlands',
+  indonesian: 'Bahasa Indonesia',
+  arabic: 'العربية',
+  romanian: 'Română',
+  vietnamese: 'Tiếng Việt',
   italian: 'Italiano',
   latin: 'Latina',
   polish: 'Polski',
@@ -73,6 +80,69 @@ export const dayTranslations = {
     thursday: 'Jeudi',
     friday: 'Vendredi',
     saturday: 'Samedi'
+  },
+  german: {
+    sunday: 'Sonntag',
+    monday: 'Montag',
+    tuesday: 'Dienstag',
+    wednesday: 'Mittwoch',
+    thursday: 'Donnerstag',
+    friday: 'Freitag',
+    saturday: 'Samstag'
+  },
+  czech: {
+    sunday: 'Neděle',
+    monday: 'Pondělí',
+    tuesday: 'Úterý',
+    wednesday: 'Středa',
+    thursday: 'Čtvrtek',
+    friday: 'Pátek',
+    saturday: 'Sobota'
+  },
+  dutch: {
+    sunday: 'Zondag',
+    monday: 'Maandag',
+    tuesday: 'Dinsdag',
+    wednesday: 'Woensdag',
+    thursday: 'Donderdag',
+    friday: 'Vrijdag',
+    saturday: 'Zaterdag'
+  },
+  indonesian: {
+    sunday: 'Minggu',
+    monday: 'Senin',
+    tuesday: 'Selasa',
+    wednesday: 'Rabu',
+    thursday: 'Kamis',
+    friday: 'Jumat',
+    saturday: 'Sabtu'
+  },
+  arabic: {
+    sunday: 'الأحد',
+    monday: 'الإثنين',
+    tuesday: 'الثلاثاء',
+    wednesday: 'الأربعاء',
+    thursday: 'الخميس',
+    friday: 'الجمعة',
+    saturday: 'السبت'
+  },
+  romanian: {
+    sunday: 'Duminică',
+    monday: 'Luni',
+    tuesday: 'Marți',
+    wednesday: 'Miercuri',
+    thursday: 'Joi',
+    friday: 'Vineri',
+    saturday: 'Sâmbătă'
+  },
+  vietnamese: {
+    sunday: 'Chủ Nhật',
+    monday: 'Thứ Hai',
+    tuesday: 'Thứ Ba',
+    wednesday: 'Thứ Tư',
+    thursday: 'Thứ Năm',
+    friday: 'Thứ Sáu',
+    saturday: 'Thứ Bảy'
   }
 } as const;
 
@@ -174,5 +244,103 @@ export const uiTranslations = {
     notAffiliated: 'Non affilié à l\'Auxilium Christianorum officiel',
     disclaimer: 'Avertissement',
     disclaimerText: 'Ceci n\'est pas un site officiel de l\'Auxilium Christianorum. Ce site est un projet personnel créé pour faciliter les prières quotidiennes de l\'association. Pour des informations officielles, veuillez visiter'
+  },
+  german: {
+    siteTitle: 'Gebete des Auxilium Christianorum',
+    selectLanguage: 'Sprache wählen',
+    dailyPrayers: 'Tägliche Gebete',
+    prayersFor: 'Gebete für',
+    conclusion: 'Schlussgebet',
+    loading: 'Laden...',
+    error: 'Fehler beim Laden der Gebete',
+    today: 'Heute',
+    createdWithDevotion: 'Mit Hingabe für die Mitglieder des Auxilium Christianorum erstellt',
+    notAffiliated: 'Nicht verbunden mit dem offiziellen Auxilium Christianorum',
+    disclaimer: 'Haftungsausschluss',
+    disclaimerText: 'Dies ist keine offizielle Website des Auxilium Christianorum. Diese Website ist ein persönliches Projekt, das erstellt wurde, um die täglichen Gebete der Gemeinschaft zu erleichtern. Für offizielle Informationen besuchen Sie bitte'
+  },
+  czech: {
+    siteTitle: 'Modlitby Auxilium Christianorum',
+    selectLanguage: 'Vybrat jazyk',
+    dailyPrayers: 'Denní modlitby',
+    prayersFor: 'Modlitby pro',
+    conclusion: 'Závěr',
+    loading: 'Načítání...',
+    error: 'Chyba při načítání modliteb',
+    today: 'Dnes',
+    createdWithDevotion: 'Vytvořeno s oddaností pro členy Auxilium Christianorum',
+    notAffiliated: 'Není spojeno s oficiálním Auxilium Christianorum',
+    disclaimer: 'Prohlášení',
+    disclaimerText: 'Toto není oficiální webové stránky Auxilium Christianorum. Tyto stránky jsou osobním projektem vytvořeným pro usnadnění každodenních modliteb společenství. Pro oficiální informace navštivte prosím'
+  },
+  dutch: {
+    siteTitle: 'Gebeden van het Auxilium Christianorum',
+    selectLanguage: 'Selecteer Taal',
+    dailyPrayers: 'Dagelijkse Gebeden',
+    prayersFor: 'Gebeden voor',
+    conclusion: 'Slotgebed',
+    loading: 'Laden...',
+    error: 'Fout bij het laden van de gebeden',
+    today: 'Vandaag',
+    createdWithDevotion: 'Met toewijding gemaakt voor de leden van het Auxilium Christianorum',
+    notAffiliated: 'Niet verbonden met het officiële Auxilium Christianorum',
+    disclaimer: 'Vrijwaring',
+    disclaimerText: 'Dit is geen officiële website van het Auxilium Christianorum. Deze website is een persoonlijk project dat is gemaakt om de dagelijkse gebeden van de gemeenschap te vergemakkelijken. Voor officiële informatie, bezoek alstublieft'
+  },
+  indonesian: {
+    siteTitle: 'Doa-Doa Auxilium Christianorum',
+    selectLanguage: 'Pilih Bahasa',
+    dailyPrayers: 'Doa Harian',
+    prayersFor: 'Doa untuk',
+    conclusion: 'Penutup',
+    loading: 'Memuat...',
+    error: 'Gagal memuat doa-doa',
+    today: 'Hari Ini',
+    createdWithDevotion: 'Dibuat dengan penuh bakti untuk anggota Auxilium Christianorum',
+    notAffiliated: 'Tidak berafiliasi dengan Auxilium Christianorum resmi',
+    disclaimer: 'Penyangkalan',
+    disclaimerText: 'Ini bukan situs web resmi Auxilium Christianorum. Situs web ini adalah proyek pribadi yang dibuat untuk memudahkan doa harian persekutuan. Untuk informasi resmi, silakan kunjungi'
+  },
+  arabic: {
+    siteTitle: 'صلوات الأوكسيليوم كريستيانوروم',
+    selectLanguage: 'اختر اللغة',
+    dailyPrayers: 'الصلوات اليومية',
+    prayersFor: 'صلوات من أجل',
+    conclusion: 'الختام',
+    loading: 'جاري التحميل...',
+    error: 'حدث خطأ أثناء تحميل الصلوات',
+    today: 'اليوم',
+    createdWithDevotion: 'تم إنشاؤه بإخلاص لأعضاء الأوكسيليوم كريستيانوروم',
+    notAffiliated: 'غير تابع للأوكسيليوم كريستيانوروم الرسمي',
+    disclaimer: 'إخلاء مسؤولية',
+    disclaimerText: 'هذا ليس الموقع الرسمي للأوكسيليوم كريستيانوروم. هذا الموقع هو مشروع شخصي تم إنشاؤه لتسهيل الصلوات اليومية للجمعية. للحصول على معلومات رسمية، يرجى زيارة'
+  },
+  romanian: {
+    siteTitle: 'Rugăciunile Auxilium Christianorum',
+    selectLanguage: 'Selectează Limba',
+    dailyPrayers: 'Rugăciuni Zilnice',
+    prayersFor: 'Rugăciuni pentru',
+    conclusion: 'Încheiere',
+    loading: 'Se încarcă...',
+    error: 'Eroare la încărcarea rugăciunilor',
+    today: 'Astăzi',
+    createdWithDevotion: 'Creat cu devoțiune pentru membrii Auxilium Christianorum',
+    notAffiliated: 'Nu este afiliat cu Auxilium Christianorum oficial',
+    disclaimer: 'Declinare de răspundere',
+    disclaimerText: 'Acesta nu este un site oficial al Auxilium Christianorum. Acest site este un proiect personal creat pentru a facilita rugăciunile zilnice ale asociației. Pentru informații oficiale, vă rugăm să vizitați'
+  },
+  vietnamese: {
+    siteTitle: 'Kinh Nguyện Auxilium Christianorum',
+    selectLanguage: 'Chọn Ngôn Ngữ',
+    dailyPrayers: 'Kinh Nguyện Hằng Ngày',
+    prayersFor: 'Kinh Nguyện Cho',
+    conclusion: 'Kết Thúc',
+    loading: 'Đang tải...',
+    error: 'Lỗi khi tải kinh nguyện',
+    today: 'Hôm Nay',
+    createdWithDevotion: 'Được tạo ra với lòng sùng kính dành cho các thành viên của Auxilium Christianorum',
+    notAffiliated: 'Không liên kết với Auxilium Christianorum chính thức',
+    disclaimer: 'Tuyên bố miễn trừ trách nhiệm',
+    disclaimerText: 'Đây không phải là trang web chính thức của Auxilium Christianorum. Trang web này là một dự án cá nhân được tạo ra để tạo điều kiện thuận lợi cho việc đọc kinh hằng ngày của hội. Để biết thông tin chính thức, vui lòng truy cập'
   }
 } as const; 

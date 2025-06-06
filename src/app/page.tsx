@@ -11,6 +11,13 @@ import { portuguesePrayers } from '@/data/portuguese-prayers';
 import { italianPrayers } from '@/data/italian-prayers';
 import { polishPrayers } from '@/data/polish-prayers';
 import { frenchPrayers } from '@/data/french-prayers';
+import { germanPrayers } from '@/data/german-prayers';
+import { czechPrayers } from '@/data/czech-prayers';
+import { dutchPrayers } from '@/data/dutch-prayers';
+import { indonesianPrayers } from '@/data/indonesian-prayers';
+import { arabicPrayers } from '@/data/arabic-prayers';
+import { romanianPrayers } from '@/data/romanian-prayers';
+import { vietnamesePrayers } from '@/data/vietnamese-prayers';
 import { Language, languageNames, dayTranslations, uiTranslations } from '@/translations/ui';
 import { useLanguage } from '@/hooks/useLanguage';
 import { Day, DailyPrayers } from '@/types/prayers';
@@ -24,7 +31,14 @@ const prayersByLanguage: Record<Language, DailyPrayers> = {
   portuguese: portuguesePrayers,
   italian: italianPrayers,
   polish: polishPrayers,
-  french: frenchPrayers
+  french: frenchPrayers,
+  german: germanPrayers,
+  czech: czechPrayers,
+  dutch: dutchPrayers,
+  indonesian: indonesianPrayers,
+  arabic: arabicPrayers,
+  romanian: romanianPrayers,
+  vietnamese: vietnamesePrayers
 };
 
 export default function Home() {
